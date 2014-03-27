@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>LiveScript talk</title>
+		<title>Esolang talk</title>
 
 		<meta name="description" content="LiveScript talk at Functional Programmers Paris Meetup, November 26th 2013">
 		<meta name="author" content="NEWTON" >
@@ -15,7 +15,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 		<link rel="stylesheet" href="css/reveal.min.css">
-		<link rel="stylesheet" href="css/theme/moon.css" id="theme">
+		<link rel="stylesheet" href="css/theme/solarized.css" id="theme">
 
 		<!-- For syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -51,20 +51,94 @@ to experiment with weird ideas, to be hard to program in, or as a joke, rather t
 			
 			<section>
 			<h3>Esoteric languages</h3>
-<br />♥ &nbsp Have Ultimate fun !<br />
-♥ &nbsp Mess with your brain ! <br />
-♥ &nbsp Explore new paradigms !
+<ul>
+<li>&nbsp Have Ultimate fun !</li>
+<li>&nbsp Mess with your brain !</li> 
+<li>&nbsp Explore new paradigms !</li>
 			</section>
-	
+	</ul>
 <section>
 <h3>Today's Menu</h3>
-Turing-completeness
-Brainfuck<br />
-Piet<br />
-Fractran
+<ul>
+<li>Turing-completeness</li> 
+<li>Brainfuck</li>
+<li>Piet</li>
+<li>Fractran</li>
+</ul>
+</section>
+
+<section>
+<h3>Turing machine</h3>
+Can solve all possible algorithmic computations<br />
+
+<ul><li>Infinite ribbon of (finite state) cells</li>
+<li>Left / right movement</li>
+<li>Choice and action on current cell
+</li></ul>
 
 </section>
 
+<section>
+<h3>Turing complete languages</h3>
+" A given programming language is said to be Turing -             complete if it can be shown that it is computationally             equivalent to a Turing machine."
+</section>
+
+<section>
+<h3>BRAINFUCK</h3>
+
+    ♥ Invented in 1993 by Urban Müller 
+   <br/> ♥  Goal : Turing-Complete language which needs a minimal compiler only.
+    <br />♥  Müller's Amiga compiler was 240 bytes in size
+</section>
+
+<section>
+<h3>Basics</h3>
+  ✈ The idea behind Brainfuck is memory manipulation.
+<br />
+    ✈ You are given an array of 30,000 1byte memory blocks
+<br />
+     ✈ A Brainfuck program has an implicit byte pointer, 
+       called "the pointer" initially all set to zero.
+<br />
+     ✈ Within this array, you can increase the memory 
+      pointer, increase the value at the memory pointer, etc.
+</section>
+
+<section><h3>Operators</h3><code>
+> 	       becomes 	       ++p;
+< 	       becomes 	        --p;
++         becomes 	        ++*p;
+- 	       becomes 	        --*p;
+. 	       becomes 	        putchar(*p);
+,           becomes 	        *p = getchar();
+[           becomes 	         while (*p) {
+] 	        becomes 	 }
+                 
+               ツ  Test loop  ⇒   [     ]
+                ツ  Byte IO      ⇒   ,     .
+</code>
+</section>
+
+<section>
+<h3>Rules</h3>
+®  Characters besides the 8 operators should be                           considered comments. 
+  ®  All memory blocks on the "array" are set to zero at the           beginning of the program. 
+  ®  And the memory pointer starts out on the very left                 most memory block. 
+  ®   Loops may be nested as many times as you want. 
+         But all [ must have a corresponding ].
+</section>
+
+
+<section>
+<h3>Brainfuck</h3><ul>
+<li>Left / right movement ⇒ < > </li>
+<li>Increment / decrement ⇒ + -</li>
+<li>Test “loop” ⇒ [ ]</li>
+<li>Byte IO ⇒ , .</li>
+</ul>
+
+"Infinite" buffer of byte cells
+</section>
 
 
 
