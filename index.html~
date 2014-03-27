@@ -117,8 +117,11 @@ Can solve all possible algorithmic computations<br />
                  
                ツ  Test loop  ⇒   [     ]
                 ツ  Byte IO      ⇒   ,     .
+                
 </code></pre>
 </section>
+
+
 
 <section>
 <h3>Rules</h3>
@@ -190,6 +193,13 @@ Pointer :   ^
 
 </section>
 
+
+
+<section>
+<h3>⚥JOKE KILLER</h3>
+<img src="g.png" alt="" height="550" width= "550">
+
+</section>
 
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.min.js"></script>
