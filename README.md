@@ -49,3 +49,7 @@ http://skilldrick.co.uk/2011/02/why-you-should-learn-brainfuck-or-learn-you-a-br
 7. interpreter reversed :
 
 http://skilldrick.co.uk/brainfuck/
+
+8. Brainfuck interpreter awesome
+
+http://esoteric.sange.fi/brainfuck/impl/interp/i.html
