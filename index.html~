@@ -292,8 +292,8 @@ Can solve all possible algorithmic computations<div>
 
 <pre><code>[-] </code></pre>
 
-  Enter a loop that decreases the value stored at the current memory pointer&nbsp;
-      until it reaches zero, then exits the loop.&nbsp;
+ <div style="white-space: pre-wrap; font-size: 24px;"> Enter a loop that decreases the value stored at the current memory pointer&nbsp;&nbsp;</div>
+ <div style="white-space: pre-wrap; font-size: 24px;"> until it reaches zero, then exits the loop.&nbsp;</div>
       <pre><code> +++++[-]  
 
 
@@ -304,26 +304,40 @@ C ➳        *p=+5;
            while(*p != 0) 
             { 
                *p--; 
-            }</code> </pre>
- Incrementing the current memory ptr value to 5, then entering a loop that dec <br />
- the value located at the memory ptr till it is zero, then exits the loop.
-
+            }
+            </code></pre>
+   <div style="white-space: pre-wrap; font-size: 24px;"> Incrementing the current memory ptr value to 5, then entering a loop that dec &nbsp;</div>
+  <div style="white-space: pre-wrap; font-size: 24px;">the value located at the memory ptr till it is zero, then exits the loop.&nbsp;</div>
 </section>
 
 <section data-id="d8682d2ceb0c8ee7bd85d22cc8806b86" data-background-color="rgba( 22, 152, 213, 0.6 )">
 <h2>More examples</h2>
-<pre><code>  <font color="#ffff00">,[.,]</font>                    &nbsp;<span style="font-family: monospace;">Echo ☂ EOF  returns 0 </span></code></pre>
-<pre data-fragment-index="0">
-<code> &nbsp;<span style="color: rgb(255, 255, 0); background-color: rgba(0, 0, 0, 0.0980392);">&gt;&gt;&gt;++</span>
-<span style="background-color: rgba(0, 0, 0, 0.0980392); color: rgb(255, 255, 255); text-align: center;">  </span>
-</code>
-</pre>
+<pre><code>[.,]       Echo ☂ EOF  returns 0 
+</code></pre>
+<pre><code>  >>>++ 
+</code></pre>
 <font face="monospace">
-<div style="white-space: pre-wrap; font-size: 19.84126853942871px;">  &nbsp;</div>
-<div style="white-space: pre-wrap; font-size: 19.84126853942871px;">    This will move the memory pointer to the fourth memory block, and increment the&nbsp;</div>
-<div style="white-space: pre-wrap; font-size: 19.84126853942871px; text-align: left;">
-<span>      value stored there by 2.</span>
-</div>
+<div style="white-space: pre-wrap; font-size: 19.84126853942871px;">This will move the memory pointer to the fourth memory block, and increment the&nbsp;</div>
+<div style="white-space: pre-wrap; font-size: 19.84126853942871px;">value stored there by 2.&nbsp;</div>
+
+<pre>
+<code>
+memory blocks 
+------------- 
+[0][0][0][2][0][0]... 
+^ 
+memory pointer
+
+  >>>>++<<+>>+
+  
+memory blocks 
+------------- 
+[0][1][0][3][0][0]... 
+^ 
+memory pointer
+
+</code></pre>
+<!--
 <pre><code style="white-space: pre-wrap;"><font style="font-size: 18px;" color="#ffff00"> </font><font style="font-size: 18px;" color="#00ffff">memory blocks 
 ------------- 
 [0][0][0][2][0][0]... 
@@ -333,9 +347,8 @@ memory pointer</font></code><code style="white-space: pre-wrap;"><font style="fo
 [0][1][0][3][0][0]... 
 ^ 
 memory pointer </font></span><span style="color: rgb(255, 255, 0); font-size: 17.507001876831055px;">
-</span></code><code><br></code></pre>
+</span></code><code><br></code></pre>-->
     </font>
-
 </section>
 <section data-id="d6b24d89c60ae0c3d48019283b7c43a2" data-background-color="rgba( 12, 25, 77, 0.6)">
 <h2>Hello World</h2>
