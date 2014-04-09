@@ -20,8 +20,13 @@ A framework for easily creating beautiful presentations using HTML. [Check out t
 
 
 
+
 Important Links : 
 ========================================================
+Best place to be at for a JS interpreter :
+
+http://nayuki.eigenstate.org/page/brainfuck-interpreter-javascript
+
 1. Sample code  
 
 http://www.xappsoftware.com/wordpress/2011/03/19/brainfuck-sample-code/
